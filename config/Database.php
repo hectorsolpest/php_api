@@ -10,6 +10,7 @@ class Database
     private $port = 3308;
     private $connection;
 
+    //function for connection to database
     public function connect()
     {
         $this->connection = new mysqli($this->host, $this->user, $this->password, $this->db_name, $this->port);
